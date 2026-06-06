@@ -1,0 +1,20 @@
+name = "idkaboutbytes/rxsignal"
+version = "1.0.0"
+description = "RxSignal package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/rxsignal"
+includes = ["pesde.toml", "README.md", "CHANGELOG.md", "default.project.json", "src/**/*.luau"]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[dependencies]
+Observable = { repo = "idkaboutbytes/observable", rev = "v1.0.0" }
+Rx = { repo = "idkaboutbytes/rx", rev = "v1.0.0" }
+Subscription = { repo = "idkaboutbytes/subscription", rev = "v1.0.0" }
